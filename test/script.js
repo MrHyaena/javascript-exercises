@@ -1,4 +1,6 @@
-const removeFromArray = function() {
+let array =
+
+function bug() {
     let originalArray = arguments[0]
     let argLength = arguments.length - 1
 
@@ -12,10 +14,10 @@ const removeFromArray = function() {
         arrayTest.splice(index, 1)
         }
     }
-
     
     return arrayTest
 };
 
-// Do not edit below this line
-module.exports = removeFromArray;
+bug([1, 2, 3, 4], 1, 2, 3, 4)
+
+console.log(arrayTest)
