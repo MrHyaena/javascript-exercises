@@ -1,4 +1,4 @@
-let array =
+
 
 function bug() {
     let originalArray = arguments[0]
