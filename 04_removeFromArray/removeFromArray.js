@@ -7,7 +7,10 @@ const removeFromArray = function() {
     for (let i = 0; i < argLength; i++) {
 
         let index = arrayTest.indexOf(arguments[i + 1]);
+
+        if (index > 0) {
         arrayTest.splice(index, 1)
+        }
     }
 
     return arrayTest
