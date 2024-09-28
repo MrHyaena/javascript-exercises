@@ -1,7 +1,8 @@
 const removeFromArray = function() {
-    let arrayTest = arguments[0]
-    let word = arguments[1]
+    let originalArray = arguments[0]
     let argLength = arguments.length - 1
+
+    let arrayTest = originalArray.filter((value, id) => originalArray.indexOf(value) === id)
 
     for (let i = 0; i < argLength; i++) {
 
